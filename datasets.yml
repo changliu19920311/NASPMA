@@ -1,0 +1,52 @@
+# Holds information about the different datasets used by the LMR code.  Each
+# source is named as the tag used to designate it in the config.yml
+
+# NASA GISTEMP
+GISTEMP:
+  info:
+    multiple_vars: False
+    template: null
+    available_vars: [tempanomaly]
+
+  datadir: null
+  datafile: gistemp1200_ERSSTv4.nc
+  dataformat: NCD
+
+
+GPCC:
+  info:
+    multiple_vars: False
+    template: null
+    available_vars: [precip]
+
+  datadir: null
+  datafile: GPCC_precip.mon.flux.1x1.v6.nc
+  dataformat: NCD
+
+ccsm4_last_millenium:
+  info:
+    multiple_vars: True
+    template: '[vardef_template]'
+    available_vars: [tas_sfc_Amon, psl_Amon, zg_500hPa_Amon,zg_700hPa_Amon,
+                     wap_500hPa_Amon, wap_700hPa_Amon, wap_850hPa_Amon,
+                     gmt_sfc_Amon, nhmt_sfc_Amon, shmt_sfc_Amon,
+                     pr_sfc_Amon, prw_int_Amon, scpdsi_sfc_Amon,
+                     scpdsipm_sfc_Amon, AI_sfc_Amon, pet_sfc_Amon,AIJJA_sfc_Amon,
+                     rlds_sfc_Amon, rlus_sfc_Amon, rsds_sfc_Amon, rsus_sfc_Amon,
+                     rlut_toa_Amon, rsdt_toa_Amon, rsut_toa_Amon,
+                     hfss_sfc_Amon, hfls_sfc_Amon,
+                     uas_sfc_Amon, vas_sfc_Amon,AI_sfc_Amon,
+                     tos_sfc_Omon, sos_sfc_Omon, ohc_0-700m_Omon,
+                     ohcArctic_0-700m_Omon, ohcAtlanticNH_0-700m_Omon,
+                     ohcAtlanticSH_0-700m_Omon, ohcAtlantic_0-700m_Omon,
+                     ohcPacificNH_0-700m_Omon, ohcPacificSH_0-700m_Omon,
+                     ohcPacific_0-700m_Omon,PET_sfc_Amon,
+                     ohcIndian_0-700m_Omon, ohcSouthern_0-700m_Omon,
+                     nheatGlobal_Omon, nheatAtlanticArctic_Omon,
+                     AMOCstreamfct_Omon,
+                     AMOCindex_Omon, AMOC26Nmax_Omon, AMOC26N1000m_Omon,
+                     AMOC45N1000m_Omon,PRECT_sfc_Amon]
+
+  datadir: null
+  datafile: '[vardef_template]_CCSM4_past1000_085001-185012.nc'
+  dataformat: NCD
