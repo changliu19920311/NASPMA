@@ -1,0 +1,3 @@
+         NA     Western US     Southeastern US     Northeast NA     
+  0.288   0.329   0.170  -3.076
+  0.082  -0.559   0.363   0.190
